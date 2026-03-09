@@ -10,7 +10,7 @@ function App() {
 const [editId,setEditId] = useState(null);
    const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/tasks');
+      const response = await axios.get('https://note-keeper-app-2s6x.onrender.com/api/tasks');
       console.log(response.data);
       setTasks(response.data);
     } catch (error) {
